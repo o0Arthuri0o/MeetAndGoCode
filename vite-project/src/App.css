@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Montserrat:wght@400;500;600&display=swap');
+* {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    /* overflow: hidden; */
+    outline: none;
+}
+.reg__backImg{
+    position: absolute;
+    width: 100vw;
+}
+h1{
+    color: #FFF;
+    font-family: Geologica;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+.reg {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 17px 33.5px;
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* WRAPPER */
+.reg__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45vh;
+    width: 100%;
+    gap: 32px;
+    z-index: 99999;
+}
+@media (max-height:770px) {
+    .reg__wrapper {
+        margin-top: 35vh;
+    }
+}
+
+/* INPUT */
+
+.reg__inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reg__input {  
+    padding: 8px 8px 8px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(71, 80, 114, 0.50);
+    background: #FFF;
+    width: 80vw;
+    height: 50px;
+    color: black;
+    font-weight: 500;
+    font-family: Montserrat;
+    font-size: 14px;
+    position: relative;
+  }
+.reg__input:focus{
+    border: 2px solid #4570FF;
+}
+
+svg {
+  width: 23px;
+  height: 32px;
+  position: absolute;
+  right: 13%;
+  margin-top: 8px;
+  z-index: 9999;
+}
+@media(min-width: 930px) {
+  svg {
+    right: 11%;
+  }
+}
+
+
+
+
+
+/* Line */
+.reg__line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reg_breakLine{
+    height: 1px;
+    background: rgba(0, 0, 0, 0.50);
+    width: 128.004px;
+}
+
+/* SocailMedia */
+.reg__socialMedia{
+    display: flex;
+    gap: 15px;
+
+}
+
+.reg__socialIco{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+/* BUTTON */
+
+.reg__btn {
+    border-radius: 12px;
+    background: rgba(28, 39, 76, 0.80);
+    padding: 8px 32px;
+    border: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    width: 80vw;
+    height: 50px;
+}
+
+/* INFO */
+
+.reg__info{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.reg__infoLine{
+    width: 1px;
+    height: 10px;
+    background: #5B5B5B;
+}
+@media (max-width:360px) {
+    .reg__infoText{
+        font-size: 10px;
+    }
+    .reg_breakLine{
+        width: 70px;
+    }
+    .reg__wrapper{
+        margin-top: 25vh;
+    }
+}
